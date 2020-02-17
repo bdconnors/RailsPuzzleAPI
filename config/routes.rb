@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
-      resources :users, only: [:index]
-      resources :login, only: [:create]
-    end
+      resources :login
+  end
   end
 end

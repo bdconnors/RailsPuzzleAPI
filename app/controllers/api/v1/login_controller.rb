@@ -3,9 +3,9 @@ class Api::V1::LoginController < ApplicationController
 # POST /login
   def create
     body = JSON.parse request.body.read
-    account = User.find_by(email: body['email'])
+    account = User.find_by(email: body['email']).to_json(:except=> :password)
     token = TokenBuilder.encode(account)
-    render json: {token: token}
+    render json: {token:token}
   end
 end
 

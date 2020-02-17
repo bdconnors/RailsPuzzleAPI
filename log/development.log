@@ -1370,3 +1370,557 @@ Completed 200 OK in 14ms (Views: 0.1ms | MongoDB: 0.0ms | Allocations: 788)
 
 MONGODB | [14] localhost:27017 #2 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x95334740 type=uuid data=0x76db84b4a7b0467d...>}]}
 MONGODB | [14] localhost:27017 | admin.endSessions | SUCCEEDED | 0.001s
+Started POST "/api/v1/login" for ::1 at 2020-02-17 11:27:45 -0500
+Processing by Api::V1::LoginController#create as JSON
+  Parameters: {"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]", "login"=>{"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]"}}
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 3.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x54277340 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x54256560 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 16:27:45 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>4, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.003295>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x54256560 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 16:27:45 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>4, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.003295> new=#<Mongo::Server:Description:0x54191260 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 16:27:45 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>6, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.004847000000000001>>
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Single[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Single' changed to type 'Single'.
+MONGODB | [7] localhost:27017 #1 | puzzle.find | STARTED | {"find"=>"User", "filter"=>{"email"=>"bdc5435@rit.edu"}, "lsid"=>{"id"=><BSON::Binary:0x54211900 type=uuid data=0x9c717ef20c624bca...>}}
+MONGODB | [7] localhost:27017 | puzzle.find | SUCCEEDED | 0.011s
+Completed 200 OK in 113ms (Views: 0.2ms | MongoDB: 0.0ms | Allocations: 8441)
+
+
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x54191260 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 16:27:45 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>6, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.004847000000000001> new=#<Mongo::Server:Description:0x53987020 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 16:27:55 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>4, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.004010400000000001>>
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Single[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Single' changed to type 'Single'.
+Started POST "/api/v1/login" for ::1 at 2020-02-17 11:33:38 -0500
+Processing by Api::V1::LoginController#create as JSON
+  Parameters: {"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]", "login"=>{"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]"}}
+MONGODB | [8] localhost:27017 #1 | puzzle.find | STARTED | {"find"=>"User", "filter"=>{"email"=>"bdc5435@rit.edu"}, "lsid"=>{"id"=><BSON::Binary:0x54211900 type=uuid data=0x9c717ef20c624bca...>}}
+MONGODB | [8] localhost:27017 | puzzle.find | SUCCEEDED | 0.011s
+Completed 200 OK in 14ms (Views: 0.1ms | MongoDB: 0.0ms | Allocations: 839)
+
+
+Started POST "/api/v1/login" for ::1 at 2020-02-17 11:34:16 -0500
+Processing by Api::V1::LoginController#create as JSON
+  Parameters: {"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]", "login"=>{"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]"}}
+MONGODB | [9] localhost:27017 #1 | puzzle.find | STARTED | {"find"=>"User", "filter"=>{"email"=>"bdc5435@rit.edu"}, "lsid"=>{"id"=><BSON::Binary:0x54211900 type=uuid data=0x9c717ef20c624bca...>}}
+MONGODB | [9] localhost:27017 | puzzle.find | SUCCEEDED | 0.011s
+Completed 200 OK in 13ms (Views: 0.1ms | MongoDB: 0.0ms | Allocations: 838)
+
+
+Started POST "/api/v1/login" for ::1 at 2020-02-17 11:34:24 -0500
+Processing by Api::V1::LoginController#create as JSON
+  Parameters: {"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]", "login"=>{"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]"}}
+MONGODB | [10] localhost:27017 #1 | puzzle.find | STARTED | {"find"=>"User", "filter"=>{"email"=>"bdc5435@rit.edu"}, "lsid"=>{"id"=><BSON::Binary:0x54211900 type=uuid data=0x9c717ef20c624bca...>}}
+MONGODB | [10] localhost:27017 | puzzle.find | SUCCEEDED | 0.011s
+Completed 200 OK in 13ms (Views: 0.1ms | MongoDB: 0.0ms | Allocations: 839)
+
+
+Started GET "/login/create" for 127.0.0.1 at 2020-02-17 11:35:09 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/login/create"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2020-02-17 11:35:10 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x56964820 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 16:36:06 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>4, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.001386742415673821> new=#<Mongo::Server:Description:0x23698180 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 16:36:14 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>8, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.0032983939325390566>>
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Single[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Single' changed to type 'Single'.
+MONGODB | [11] localhost:27017 #2 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x54211900 type=uuid data=0x9c717ef20c624bca...>}]}
+MONGODB | [11] localhost:27017 | admin.endSessions | SUCCEEDED | 0.011s
+Started POST "/api/v1/login" for ::1 at 2020-02-17 11:37:00 -0500
+Processing by Api::V1::LoginController#create as JSON
+  Parameters: {"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]", "login"=>{"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]"}}
+Started POST "/api/v1/login" for ::1 at 2020-02-17 11:40:20 -0500
+Processing by Api::V1::LoginController#create as JSON
+  Parameters: {"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]", "login"=>{"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]"}}
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 3.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x56367460 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x56312560 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 16:40:21 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>10, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.013256>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x56312560 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 16:40:21 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>10, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.013256> new=#<Mongo::Server:Description:0x55946720 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 16:40:21 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>12, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.0127594>>
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Single[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Single' changed to type 'Single'.
+MONGODB | [7] localhost:27017 #1 | puzzle.find | STARTED | {"find"=>"User", "filter"=>{"email"=>"email"}, "lsid"=>{"id"=><BSON::Binary:0x56162340 type=uuid data=0x15431865360d4355...>}}
+MONGODB | [7] localhost:27017 | puzzle.find | SUCCEEDED | 0.011s
+Completed 404 Not Found in 129ms (MongoDB: 0.0ms | Allocations: 12837)
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document not found for class User with attributes {:email=>"email"}.
+summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  
+app/controllers/api/v1/login_controller.rb:6:in `create'
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x55946720 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 16:40:21 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>12, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.0127594> new=#<Mongo::Server:Description:0x57608480 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 16:40:31 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>10, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.01032532>>
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Single[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Single' changed to type 'Single'.
+Started POST "/api/v1/login" for ::1 at 2020-02-17 11:41:21 -0500
+Processing by Api::V1::LoginController#create as JSON
+  Parameters: {"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]", "login"=>{"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]"}}
+MONGODB | [8] localhost:27017 #1 | puzzle.find | STARTED | {"find"=>"User", "filter"=>{"email"=>"bdc5435@rit.edu"}, "lsid"=>{"id"=><BSON::Binary:0x56162340 type=uuid data=0x15431865360d4355...>}}
+MONGODB | [8] localhost:27017 | puzzle.find | SUCCEEDED | 0.011s
+Completed 200 OK in 18ms (Views: 0.2ms | MongoDB: 0.0ms | Allocations: 4326)
+
+
+Started POST "/api/v1/login" for ::1 at 2020-02-17 11:42:12 -0500
+Processing by Api::V1::LoginController#create as JSON
+  Parameters: {"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]", "login"=>{"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]"}}
+MONGODB | [9] localhost:27017 #1 | puzzle.find | STARTED | {"find"=>"User", "filter"=>{"email"=>"bdc5435@rit.edu"}, "lsid"=>{"id"=><BSON::Binary:0x56162340 type=uuid data=0x15431865360d4355...>}}
+MONGODB | [9] localhost:27017 | puzzle.find | SUCCEEDED | 0.011s
+Completed 200 OK in 13ms (Views: 0.1ms | MongoDB: 0.0ms | Allocations: 838)
+
+
+Started POST "/api/v1/login" for ::1 at 2020-02-17 11:42:26 -0500
+Processing by Api::V1::LoginController#create as JSON
+  Parameters: {"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]", "login"=>{"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]"}}
+MONGODB | [10] localhost:27017 #1 | puzzle.find | STARTED | {"find"=>"User", "filter"=>{"email"=>"bdc5435@rit.edu"}, "lsid"=>{"id"=><BSON::Binary:0x56162340 type=uuid data=0x15431865360d4355...>}}
+MONGODB | [10] localhost:27017 | puzzle.find | SUCCEEDED | 0.011s
+Completed 200 OK in 13ms (Views: 0.1ms | MongoDB: 0.0ms | Allocations: 838)
+
+
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x57592240 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 16:45:51 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>10, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.000565948209207008> new=#<Mongo::Server:Description:0x65258640 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 16:45:59 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>14, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.0027215585673656065>>
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Single[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Single' changed to type 'Single'.
+MONGODB | [11] localhost:27017 #2 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x56162340 type=uuid data=0x15431865360d4355...>}]}
+MONGODB | [11] localhost:27017 | admin.endSessions | SUCCEEDED | 0.000s
+Started POST "/api/v1/login" for ::1 at 2020-02-17 11:46:27 -0500
+Processing by Api::V1::LoginController#create as JSON
+  Parameters: {"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]", "login"=>{"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]"}}
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 3.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x57849960 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x57584640 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 16:46:27 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>16, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.003139>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x57584640 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 16:46:27 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>16, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.003139> new=#<Mongo::Server:Description:0x57130360 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 16:46:27 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>18, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.0047516>>
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Single[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Single' changed to type 'Single'.
+MONGODB | [7] localhost:27017 #1 | puzzle.find | STARTED | {"find"=>"User", "filter"=>{"email"=>"email"}, "lsid"=>{"id"=><BSON::Binary:0x57405260 type=uuid data=0x29616be016d540b9...>}}
+MONGODB | [7] localhost:27017 | puzzle.find | SUCCEEDED | 0.011s
+Completed 404 Not Found in 64ms (MongoDB: 0.0ms | Allocations: 12837)
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document not found for class User with attributes {:email=>"email"}.
+summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  
+app/controllers/api/v1/login_controller.rb:7:in `create'
+Started POST "/api/v1/login" for ::1 at 2020-02-17 11:46:31 -0500
+Processing by Api::V1::LoginController#create as JSON
+  Parameters: {"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]", "login"=>{"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]"}}
+MONGODB | [8] localhost:27017 #1 | puzzle.find | STARTED | {"find"=>"User", "filter"=>{"email"=>"email"}, "lsid"=>{"id"=><BSON::Binary:0x57405260 type=uuid data=0x29616be016d540b9...>}}
+MONGODB | [8] localhost:27017 | puzzle.find | SUCCEEDED | 0.011s
+Completed 404 Not Found in 18ms (MongoDB: 0.0ms | Allocations: 901)
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document not found for class User with attributes {:email=>"email"}.
+summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  
+app/controllers/api/v1/login_controller.rb:7:in `create'
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x57130360 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 16:46:27 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>18, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.0047516> new=#<Mongo::Server:Description:0x55652740 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 16:46:37 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>16, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.00391328>>
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Single[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Single' changed to type 'Single'.
+Started POST "/api/v1/login" for ::1 at 2020-02-17 11:46:59 -0500
+Processing by Api::V1::LoginController#create as JSON
+  Parameters: {"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]", "login"=>{"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]"}}
+MONGODB | [9] localhost:27017 #1 | puzzle.find | STARTED | {"find"=>"User", "filter"=>{"email"=>"email"}, "lsid"=>{"id"=><BSON::Binary:0x57405260 type=uuid data=0x29616be016d540b9...>}}
+MONGODB | [9] localhost:27017 | puzzle.find | SUCCEEDED | 0.011s
+Completed 404 Not Found in 14ms (MongoDB: 0.0ms | Allocations: 900)
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document not found for class User with attributes {:email=>"email"}.
+summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  
+app/controllers/api/v1/login_controller.rb:7:in `create'
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x65304920 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 16:48:07 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>16, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.0018878807205478408> new=#<Mongo::Server:Description:0x32279540 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 16:48:14 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>20, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.003776504576438273>>
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Single[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Single' changed to type 'Single'.
+MONGODB | [10] localhost:27017 #2 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x57405260 type=uuid data=0x29616be016d540b9...>}]}
+MONGODB | [10] localhost:27017 | admin.endSessions | SUCCEEDED | 0.000s
+Started POST "/api/v1/login" for ::1 at 2020-02-17 12:08:40 -0500
+Processing by Api::V1::LoginController#create as JSON
+  Parameters: {"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]", "login"=>{"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 38ms (MongoDB: 0.0ms | Allocations: 21261)
+
+
+  
+NoMethodError (undefined method `parse' for #<Api::V1::LoginController:0x0000000006f64090>
+Did you mean?  params):
+  
+app/controllers/api/v1/login_controller.rb:5:in `create'
+Started POST "/api/v1/login" for ::1 at 2020-02-17 12:09:55 -0500
+Processing by Api::V1::LoginController#create as JSON
+  Parameters: {"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]", "login"=>{"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 34ms (MongoDB: 0.0ms | Allocations: 21261)
+
+
+  
+NoMethodError (undefined method `parse' for #<Api::V1::LoginController:0x0000000004e7c940>
+Did you mean?  params):
+  
+app/controllers/api/v1/login_controller.rb:5:in `create'
+Started POST "/api/v1/login" for ::1 at 2020-02-17 12:10:43 -0500
+Processing by Api::V1::LoginController#create as JSON
+  Parameters: {"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]", "login"=>{"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]"}}
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 3.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x58816820 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x58669320 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:10:43 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>22, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.002884>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x58669320 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:10:43 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>22, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.002884> new=#<Mongo::Server:Description:0x57880420 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:10:43 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>24, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.004488600000000001>>
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Single[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Single' changed to type 'Single'.
+MONGODB | [7] localhost:27017 #1 | puzzle.find | STARTED | {"find"=>"User", "filter"=>{"email"=>"bdc5435@rit.edu"}, "lsid"=>{"id"=><BSON::Binary:0x58246520 type=uuid data=0xb6cecde704f44252...>}}
+MONGODB | [7] localhost:27017 | puzzle.find | SUCCEEDED | 0.011s
+Completed 200 OK in 62ms (Views: 0.1ms | MongoDB: 0.0ms | Allocations: 8441)
+
+
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x57880420 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:10:43 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>24, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.004488600000000001> new=#<Mongo::Server:Description:0x57506380 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:10:53 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>22, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.0036724800000000005>>
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Single[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Single' changed to type 'Single'.
+Started POST "/api/v1/login" for ::1 at 2020-02-17 12:11:23 -0500
+Processing by Api::V1::LoginController#create as JSON
+  Parameters: {"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]", "login"=>{"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]"}}
+MONGODB | [8] localhost:27017 #1 | puzzle.find | STARTED | {"find"=>"User", "filter"=>{"email"=>"bdc5435@rit.edu"}, "lsid"=>{"id"=><BSON::Binary:0x58246520 type=uuid data=0xb6cecde704f44252...>}}
+MONGODB | [8] localhost:27017 | puzzle.find | SUCCEEDED | 0.011s
+Completed 200 OK in 13ms (Views: 0.1ms | MongoDB: 0.0ms | Allocations: 854)
+
+
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x54177580 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:16:03 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>22, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.0037478520543776667> new=#<Mongo::Server:Description:0x35493900 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:16:04 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>26, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.005086481643502134>>
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Single[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Single' changed to type 'Single'.
+MONGODB | [9] localhost:27017 #2 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x58246520 type=uuid data=0xb6cecde704f44252...>}]}
+MONGODB | [9] localhost:27017 | admin.endSessions | SUCCEEDED | 0.011s
+Started POST "/api/v1/login" for ::1 at 2020-02-17 12:16:24 -0500
+Processing by Api::V1::LoginController#create as JSON
+  Parameters: {"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]", "login"=>{"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]"}}
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 3.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x57191220 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x57139280 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:16:24 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>28, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.013551>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x57139280 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:16:24 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>28, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.013551> new=#<Mongo::Server:Description:0x56671760 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:16:24 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>30, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.0129756>>
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Single[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Single' changed to type 'Single'.
+MONGODB | [7] localhost:27017 #1 | puzzle.find | STARTED | {"find"=>"User", "filter"=>{"email"=>"bdc5435@rit.edu"}, "lsid"=>{"id"=><BSON::Binary:0x56782900 type=uuid data=0x41332af94542482c...>}}
+MONGODB | [7] localhost:27017 | puzzle.find | SUCCEEDED | 0.011s
+Completed 200 OK in 58ms (Views: 0.3ms | MongoDB: 0.0ms | Allocations: 8456)
+
+
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x56671760 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:16:24 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>30, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.0129756> new=#<Mongo::Server:Description:0x55937280 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:16:34 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>28, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.01049688>>
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Single[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Single' changed to type 'Single'.
+Started POST "/api/v1/login" for ::1 at 2020-02-17 12:17:03 -0500
+Processing by Api::V1::LoginController#create as JSON
+  Parameters: {"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]", "login"=>{"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]"}}
+MONGODB | [8] localhost:27017 #1 | puzzle.find | STARTED | {"find"=>"User", "filter"=>{"email"=>"bdc5435@rit.edu"}, "lsid"=>{"id"=><BSON::Binary:0x56782900 type=uuid data=0x41332af94542482c...>}}
+MONGODB | [8] localhost:27017 | puzzle.find | SUCCEEDED | 0.011s
+Completed 200 OK in 17ms (Views: 0.1ms | MongoDB: 0.0ms | Allocations: 4306)
+
+
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x65685260 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:18:54 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>28, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.0027243998311879945> new=#<Mongo::Server:Description:0x63589560 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:19:01 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>32, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.004511719864950395>>
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Single[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Single' changed to type 'Single'.
+MONGODB | [9] localhost:27017 #2 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x56782900 type=uuid data=0x41332af94542482c...>}]}
+MONGODB | [9] localhost:27017 | admin.endSessions | SUCCEEDED | 0.001s
+Started POST "/api/v1/login" for ::1 at 2020-02-17 12:27:25 -0500
+Processing by Api::V1::LoginController#create as JSON
+  Parameters: {"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]", "login"=>{"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]"}}
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 3.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x57097880 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x57038340 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:27:25 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>34, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.013982>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x57038340 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:27:25 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>34, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.013982> new=#<Mongo::Server:Description:0x56801280 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:27:25 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>36, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.013317>>
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Single[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Single' changed to type 'Single'.
+MONGODB | [7] localhost:27017 #1 | puzzle.find | STARTED | {"find"=>"User", "filter"=>{"email"=>"bdc5435@rit.edu"}, "lsid"=>{"id"=><BSON::Binary:0x56875700 type=uuid data=0xa199ebf2d2684a11...>}}
+MONGODB | [7] localhost:27017 | puzzle.find | SUCCEEDED | 0.011s
+Completed 200 OK in 58ms (Views: 0.2ms | MongoDB: 0.0ms | Allocations: 8459)
+
+
+Started GET "/api/v1/login" for ::1 at 2020-02-17 12:27:25 -0500
+Processing by Api::V1::LoginController#index as JSON
+  Parameters: {"login"=>{}}
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x56801280 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:27:25 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>36, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.013317> new=#<Mongo::Server:Description:0x53862580 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:27:35 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>34, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.0107682>>
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Single[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Single' changed to type 'Single'.
+Started POST "/api/v1/login" for ::1 at 2020-02-17 12:32:16 -0500
+Processing by Api::V1::LoginController#create as JSON
+  Parameters: {"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]", "login"=>{"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]"}}
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 3.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x55918400 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x55595640 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:32:16 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>38, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.003403>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x55595640 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:32:16 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>38, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.003403> new=#<Mongo::Server:Description:0x55189180 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:32:16 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>40, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.0048612>>
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Single[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Single' changed to type 'Single'.
+MONGODB | [7] localhost:27017 #1 | puzzle.find | STARTED | {"find"=>"User", "filter"=>{"email"=>"bdc5435@rit.edu"}, "lsid"=>{"id"=><BSON::Binary:0x55500180 type=uuid data=0x7e8066ec47964ff0...>}}
+MONGODB | [7] localhost:27017 | puzzle.find | SUCCEEDED | 0.011s
+Completed 200 OK in 46ms (Views: 0.1ms | MongoDB: 0.0ms | Allocations: 8412)
+
+
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x55189180 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:32:16 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>40, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.0048612> new=#<Mongo::Server:Description:0x54590280 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:32:26 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>38, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.0040323600000000005>>
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Single[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Single' changed to type 'Single'.
+Started POST "/api/v1/login" for ::1 at 2020-02-17 12:32:29 -0500
+Processing by Api::V1::LoginController#create as JSON
+  Parameters: {"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]", "login"=>{"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]"}}
+MONGODB | [8] localhost:27017 #1 | puzzle.find | STARTED | {"find"=>"User", "filter"=>{"email"=>"bdc5435@rit.edu"}, "lsid"=>{"id"=><BSON::Binary:0x55500180 type=uuid data=0x7e8066ec47964ff0...>}}
+MONGODB | [8] localhost:27017 | puzzle.find | SUCCEEDED | 0.011s
+Completed 200 OK in 13ms (Views: 0.1ms | MongoDB: 0.0ms | Allocations: 812)
+
+
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x49287120 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:32:56 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>38, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.0022939043200000007> new=#<Mongo::Server:Description:0x35953880 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:32:56 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>42, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.003971923456000001>>
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Single[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Single' changed to type 'Single'.
+MONGODB | [9] localhost:27017 #2 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x55500180 type=uuid data=0x7e8066ec47964ff0...>}]}
+MONGODB | [9] localhost:27017 | admin.endSessions | SUCCEEDED | 0.000s
+Started POST "/api/v1/login" for ::1 at 2020-02-17 12:33:29 -0500
+Processing by Api::V1::LoginController#create as JSON
+  Parameters: {"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]", "login"=>{"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]"}}
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 3.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x57064920 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x57002680 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:33:29 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>44, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.002906>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x57002680 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:33:29 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>44, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.002906> new=#<Mongo::Server:Description:0x56597780 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:33:29 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>46, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.0045408>>
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Single[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Single' changed to type 'Single'.
+MONGODB | [7] localhost:27017 #1 | puzzle.find | STARTED | {"find"=>"User", "filter"=>{"email"=>"bdc5435@rit.edu"}, "lsid"=>{"id"=><BSON::Binary:0x56855580 type=uuid data=0x6e554244a274496e...>}}
+MONGODB | [7] localhost:27017 | puzzle.find | SUCCEEDED | 0.010s
+Completed 200 OK in 48ms (Views: 0.2ms | MongoDB: 0.0ms | Allocations: 8446)
+
+
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x56597780 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:33:29 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>46, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.0045408> new=#<Mongo::Server:Description:0x56157760 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:33:39 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>44, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.00376484>>
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Single[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Single' changed to type 'Single'.
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x55419600 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:34:49 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>44, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.0029391743559680004> new=#<Mongo::Server:Description:0x35527700 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:34:50 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>48, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.004430139484774401>>
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Single[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Single' changed to type 'Single'.
+MONGODB | [8] localhost:27017 #2 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x56855580 type=uuid data=0x6e554244a274496e...>}]}
+MONGODB | [8] localhost:27017 | admin.endSessions | SUCCEEDED | 0.000s
+Started POST "/api/v1/login" for ::1 at 2020-02-17 12:35:24 -0500
+Processing by Api::V1::LoginController#create as JSON
+  Parameters: {"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]", "login"=>{"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]"}}
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 3.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x57978160 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x57651340 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:35:24 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>50, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.002929>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x57651340 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:35:24 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>50, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.002929> new=#<Mongo::Server:Description:0x57339300 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:35:24 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>52, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.0044904>>
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Single[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Single' changed to type 'Single'.
+MONGODB | [7] localhost:27017 #1 | puzzle.find | STARTED | {"find"=>"User", "filter"=>{"email"=>"bdc5435@rit.edu"}, "lsid"=>{"id"=><BSON::Binary:0x57553540 type=uuid data=0xaa3bc8c8612748b7...>}}
+MONGODB | [7] localhost:27017 | puzzle.find | SUCCEEDED | 0.011s
+Completed 200 OK in 50ms (Views: 0.3ms | MongoDB: 0.0ms | Allocations: 8644)
+
+
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x57339300 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:35:24 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>52, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.0044904> new=#<Mongo::Server:Description:0x56823440 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:35:34 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>50, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.0036627200000000004>>
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Single[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Single' changed to type 'Single'.
+Started POST "/api/v1/login" for ::1 at 2020-02-17 12:35:58 -0500
+Processing by Api::V1::LoginController#create as JSON
+  Parameters: {"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]", "login"=>{"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]"}}
+MONGODB | [8] localhost:27017 #1 | puzzle.find | STARTED | {"find"=>"User", "filter"=>{"email"=>"bdc5435@rit.edu"}, "lsid"=>{"id"=><BSON::Binary:0x57553540 type=uuid data=0xaa3bc8c8612748b7...>}}
+MONGODB | [8] localhost:27017 | puzzle.find | SUCCEEDED | 0.010s
+Completed 200 OK in 13ms (Views: 0.1ms | MongoDB: 0.0ms | Allocations: 1001)
+
+
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x54570020 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:37:24 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>50, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.0007287664414081028> new=#<Mongo::Server:Description:0x32579240 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:37:25 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>54, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.0027124131531264823>>
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Single[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Single' changed to type 'Single'.
+MONGODB | [9] localhost:27017 #2 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x57553540 type=uuid data=0xaa3bc8c8612748b7...>}]}
+MONGODB | [9] localhost:27017 | admin.endSessions | SUCCEEDED | 0.000s
+Started POST "/api/v1/login" for ::1 at 2020-02-17 12:37:40 -0500
+Processing by Api::V1::LoginController#create as JSON
+  Parameters: {"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]", "login"=>{"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]"}}
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 3.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x57695480 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x57537100 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:37:40 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>56, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.003244>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x57537100 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:37:40 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>56, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.003244> new=#<Mongo::Server:Description:0x57124180 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:37:40 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>58, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.0048472>>
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Single[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Single' changed to type 'Single'.
+MONGODB | [7] localhost:27017 #1 | puzzle.find | STARTED | {"find"=>"User", "filter"=>{"email"=>"bdc5435@rit.edu"}, "lsid"=>{"id"=><BSON::Binary:0x57454020 type=uuid data=0x583be9294c3142a1...>}}
+MONGODB | [7] localhost:27017 | puzzle.find | SUCCEEDED | 0.011s
+Completed 500 Internal Server Error in 124ms (MongoDB: 0.0ms | Allocations: 49221)
+
+
+  
+NameError (undefined local variable or method `password' for #<Api::V1::LoginController:0x0000000004a0df30>):
+  
+app/controllers/api/v1/login_controller.rb:6:in `create'
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x57124180 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:37:40 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>58, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.0048472> new=#<Mongo::Server:Description:0x65829000 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:37:50 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>56, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.004005560000000001>>
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Single[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Single' changed to type 'Single'.
+Started POST "/api/v1/login" for ::1 at 2020-02-17 12:38:22 -0500
+Processing by Api::V1::LoginController#create as JSON
+  Parameters: {"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]", "login"=>{"email"=>"bdc5435@rit.edu", "password"=>"[FILTERED]"}}
+MONGODB | [8] localhost:27017 #1 | puzzle.find | STARTED | {"find"=>"User", "filter"=>{"email"=>"bdc5435@rit.edu"}, "lsid"=>{"id"=><BSON::Binary:0x57454020 type=uuid data=0x583be9294c3142a1...>}}
+MONGODB | [8] localhost:27017 | puzzle.find | SUCCEEDED | 0.011s
+Completed 200 OK in 17ms (Views: 0.1ms | MongoDB: 0.0ms | Allocations: 4507)
+
+
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x56517060 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:39:00 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>56, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.0022402599045120005> new=#<Mongo::Server:Description:0x67093120 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2020-02-17 17:39:03 UTC, "logicalSessionTimeoutMinutes"=>30, "connectionId"=>60, "minWireVersion"=>0, "maxWireVersion"=>8, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.0040156079236096>>
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Single[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Single' changed to type 'Single'.
+MONGODB | [9] localhost:27017 #2 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x57454020 type=uuid data=0x583be9294c3142a1...>}]}
+MONGODB | [9] localhost:27017 | admin.endSessions | SUCCEEDED | 0.000s
