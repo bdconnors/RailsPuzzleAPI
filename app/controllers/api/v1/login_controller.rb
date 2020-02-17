@@ -8,4 +8,3 @@ class Api::V1::LoginController < ApplicationController
     render json: {token:token}
   end
 end
-
