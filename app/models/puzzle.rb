@@ -1,5 +1,6 @@
 # Models
 class Puzzle
+  belongs_to :user
   include Mongoid::Document
   field :state, type: String
   field :col, type: Integer
